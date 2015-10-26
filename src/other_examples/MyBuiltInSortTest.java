@@ -17,6 +17,7 @@
 package other_examples;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 import java.util.Random;
@@ -25,19 +26,27 @@ import java.util.Random;
  *
  * @author Johnn
  */
-public class MyBuiltInSortTest {
+public class MyBuiltInSortTest implements Comparable <Integer> {
     
    public static void main (String[] args) {
        Random random = new Random();
        List<Integer> numsToSort = new ArrayList();
        
-       for (int i = 0; i<5; i++) {
+       for (int i = 0; i<20; i++) {
        numsToSort.add(random.nextInt(100));
        }
        
-       Collections.sort(numsToSort);
+       Collections.sort(numsToSort);//for list
+       //Arrays.sort(numsToSort); //for arrays
        System.out.println("New array after builtin sort: " + numsToSort.toString());
-   
+ 
    }
-    
+
+    //Что бы использовать метод sort, мы должны переопределить метод compareTo
+   //интерфейса Comparable <подставить нужный тип>
+    @Override
+    public int compareTo(Integer t) {
+        //throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return 0;
+    }
 }
