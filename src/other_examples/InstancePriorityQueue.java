@@ -76,6 +76,17 @@ public class InstancePriorityQueue {
         {
             System.out.println(queueAsM.remove());
         }
+        System.out.println("----------------------------------------------------");
+        //or use a natural order
+        PriorityQueue<Integer> queueAsNat = new PriorityQueue<>();
+        queueAsNat.add(1);
+        queueAsNat.add(2);
+        queueAsNat.add(3);
+        while (!queueAsNat.isEmpty())
+        {
+            System.out.println(queueAsNat.remove());
+        }
+        
     }
     
     /**
