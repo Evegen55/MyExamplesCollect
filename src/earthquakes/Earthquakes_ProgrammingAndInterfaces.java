@@ -86,7 +86,7 @@ public class Earthquakes_ProgrammingAndInterfaces {
         // TODO code application logic here
         Earthquakes_ProgrammingAndInterfaces d = new Earthquakes_ProgrammingAndInterfaces();
         //quakes in Russia
-        //d.quakesRu();
+        d.quakesRu();
         
         //test package EarthquakeMagnitudeDistanceDemo
         //d.test1();
@@ -96,7 +96,7 @@ public class Earthquakes_ProgrammingAndInterfaces {
         //d.test5();
         
         //start testing week 2
-        d.testWeek2();
+        //d.testWeek2();
     }
     
 }

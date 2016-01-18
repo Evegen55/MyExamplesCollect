@@ -45,10 +45,10 @@ public class QuakeSortInPlace
 
     public void testSort() {
         EarthQuakeParser parser = new EarthQuakeParser(); 
-        //String source = "http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.atom";
+        String source = "http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.atom";
         //String source = "data/nov20quakedatasmall.atom";
         //String source = "data/nov20quakedata.atom";
-        String source = "data/earthQuakeDataDec6sample1.atom";
+        //String source = "data/earthQuakeDataDec6sample1.atom";
         ArrayList<QuakeEntry> list  = parser.read(source);  
        
         System.out.println("read data for "+list.size()+" quakes");
