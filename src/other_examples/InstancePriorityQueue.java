@@ -56,7 +56,7 @@ public class InstancePriorityQueue {
         
         
         
-        PriorityQueue<String> queue = new PriorityQueue<>(10, comparator);
+        PriorityQueue<String> queue = new PriorityQueue<>(2, comparator);
         queue.add("short");
         queue.add("very long indeed");
         queue.add("medium");
@@ -82,6 +82,7 @@ public class InstancePriorityQueue {
         queueAsNat.add(1);
         queueAsNat.add(2);
         queueAsNat.add(3);
+        queueAsNat.poll();
         while (!queueAsNat.isEmpty())
         {
             System.out.println(queueAsNat.remove());
