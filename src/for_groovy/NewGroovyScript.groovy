@@ -19,6 +19,14 @@ package for_groovy
 
 def name='Lartsev'
 
+def prt(q) {
+    if (q == 1) {
+     println 'the if part'
+     } else {
+     println 'the else part'
+     }
+}
+
 println "Hello $name!"
 
 println 6.multiply(11).minus(2)
@@ -40,3 +48,6 @@ println  "Hello".size()
 // println  ['H', 'e', 'l', 'l', 'o'].head()
 
 println  "1 + 2 == ${1 + 2}"
+
+prt(7)
+
