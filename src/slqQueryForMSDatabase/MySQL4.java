@@ -44,11 +44,11 @@ public class MySQL4 {
         SQLServerConnectionPoolDataSource sds = new SQLServerConnectionPoolDataSource();
         
         sds.setServerName("127.0.0.1");
-        sds.setInstanceName("SQLEXPRESS_1");
+        sds.setInstanceName("SQLEXPRESS");
         sds.setPortNumber(1433);
-        sds.setDatabaseName("My_Demo1");
+        sds.setDatabaseName("paymentsDB_v_1_1");
         sds.setUser("sa");
-        sds.setPassword("johnn55");
+        sds.setPassword("qwerty");
         sds.setIntegratedSecurity(false);
         sds.setDescription("проба");
         
@@ -78,7 +78,7 @@ public class MySQL4 {
             System.out.println(dmd.getURL()+"\n");
             
             while (rs.next()) {
-                System.out.println(rs.getString(1) +"||"+ rs.getString(2) );
+                System.out.println(rs.getString(1).trim() +"\t"+ rs.getString(2) +"\t"+ rs.getString(3) +"\t"+ rs.getString(4) );
             }
             stmt.close(); //This turns off the transaction.
         } catch (SQLException e) {
@@ -98,7 +98,9 @@ public class MySQL4 {
      * @throws NamingException
      */
     public static void main(String[] args) throws NamingException {
-        SQL = "SELECT * FROM Table_1;";
+        SQL = "SELECT * FROM users;";
+        MyQuery (SQL);
+        SQL = "SELECT * FROM creditCards;";
         MyQuery (SQL);
         }
     }
