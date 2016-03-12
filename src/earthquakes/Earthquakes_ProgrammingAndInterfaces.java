@@ -73,6 +73,9 @@ public class Earthquakes_ProgrammingAndInterfaces {
         s.testMatchAllFilter2();
     }
     
+    /**
+     *
+     */
     public void testWeek2() {
         QuakeSortInPlace qsip = new QuakeSortInPlace();
         qsip.testSort();

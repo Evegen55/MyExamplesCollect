@@ -23,7 +23,12 @@ import java.util.Scanner;
  * @author Lartsev
  */
 public class SimpleSystemInput {
-        public static void main(String[] args) {
+
+    /**
+     *
+     * @param args
+     */
+    public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
         System.out.println("input A");
         int a = s.nextInt();

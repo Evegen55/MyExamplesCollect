@@ -13,7 +13,12 @@ import javax.swing.*;
  */
 public class FontTest
 {
-   public static void main(String[] args)
+
+    /**
+     *
+     * @param args
+     */
+    public static void main(String[] args)
    {
       EventQueue.invokeLater(new Runnable()
          {

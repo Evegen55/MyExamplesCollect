@@ -11,12 +11,26 @@ package earthquakes;
 import java.util.*;
 import edu.duke.*;
 
+/**
+ *
+ * @author Evegen
+ */
 public class QuakeSortInPlace
 {
+
+    /**
+     *
+     */
     public QuakeSortInPlace() {
         // TODO Auto-generated constructor stub
     }
    
+    /**
+     *
+     * @param quakes
+     * @param from
+     * @return
+     */
     public int getSmallestMagnitude(ArrayList<QuakeEntry> quakes, int from) {
         int minIdx = from;
         for (int i=from+1; i< quakes.size(); i++) {
@@ -43,6 +57,9 @@ public class QuakeSortInPlace
         
     }
 
+    /**
+     *
+     */
     public void testSort() {
         EarthQuakeParser parser = new EarthQuakeParser(); 
         String source = "http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.atom";
@@ -72,6 +89,9 @@ public class QuakeSortInPlace
         
     }
     
+    /**
+     *
+     */
     public void createCSV(){
         EarthQuakeParser parser = new EarthQuakeParser();
         //String source = "data/nov20quakedata.atom";
@@ -82,6 +102,10 @@ public class QuakeSortInPlace
         System.out.println("# quakes read: "+list.size());
     }
     
+    /**
+     *
+     * @param list
+     */
     public void dumpCSV(ArrayList<QuakeEntry> list){
 		System.out.println("Latitude,Longitude,Magnitude,Info");
 		for(QuakeEntry qe : list){

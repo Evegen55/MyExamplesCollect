@@ -7,9 +7,17 @@
  */
 import javax.swing.JOptionPane;
 
+/**
+ *
+ * @author Evegen
+ */
 public class OptionalPane
 {
    
+    /**
+     *
+     * @param args
+     */
     public static void main (String[] args) 
     {
         String fn = JOptionPane.showInputDialog("Enter first number");

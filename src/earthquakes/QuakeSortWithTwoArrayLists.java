@@ -3,14 +3,26 @@ package earthquakes;
 import java.util.*;
 import edu.duke.*;
 
-
+/**
+ *
+ * @author Evegen
+ */
 public class QuakeSortWithTwoArrayLists {
     // This is the code from the Video of Selection Sort with Two ArrayLists
+
+    /**
+     *
+     */
     
     public QuakeSortWithTwoArrayLists() {
         // TODO Auto-generated constructor stub
     }
    
+    /**
+     *
+     * @param quakes
+     * @return
+     */
     public QuakeEntry getSmallestMagnitude(ArrayList<QuakeEntry> quakes) {
         QuakeEntry min = quakes.get(0);
         for (QuakeEntry q: quakes) {
@@ -21,6 +33,11 @@ public class QuakeSortWithTwoArrayLists {
         return min;
     }
     
+    /**
+     *
+     * @param in
+     * @return
+     */
     public ArrayList<QuakeEntry> sortByMagnitude(ArrayList<QuakeEntry> in) {
         ArrayList<QuakeEntry> out = new ArrayList<QuakeEntry>();
         while(!in.isEmpty()) {
@@ -31,6 +48,9 @@ public class QuakeSortWithTwoArrayLists {
         return out;
     }
     
+    /**
+     *
+     */
     public void testSort() {
         EarthQuakeParser parser = new EarthQuakeParser(); 
         //String source = "http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.atom";
@@ -47,7 +67,9 @@ public class QuakeSortWithTwoArrayLists {
         
     }
 
-    
+    /**
+     *
+     */
     public void createCSV(){
         EarthQuakeParser parser = new EarthQuakeParser();     
        // String source = "data/nov20quakedatasmall.atom";
@@ -57,6 +79,10 @@ public class QuakeSortWithTwoArrayLists {
         System.out.println("# quakes read: "+list.size());
     }
     
+    /**
+     *
+     * @param list
+     */
     public void dumpCSV(ArrayList<QuakeEntry> list){
 		System.out.println("Latitude,Longitude,Magnitude,Info");
 		for(QuakeEntry qe : list){

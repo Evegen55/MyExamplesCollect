@@ -24,6 +24,11 @@ import java.util.PriorityQueue;
  * @author Lartsev
  */
 public class InstancePriorityQueue {
+
+    /**
+     *
+     * @param args
+     */
     public static void main(String[] args)
     {
         InstancePriorityQueue ipq = new InstancePriorityQueue();

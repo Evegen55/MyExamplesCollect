@@ -21,6 +21,11 @@ package other_examples;
  * @author Evegen
  */
 public class WgereIsJavaVm {
+
+    /**
+     *
+     * @param args
+     */
     public static void main (String[] args) {
         System.out.println(System.getProperty("java.home"));
     }
