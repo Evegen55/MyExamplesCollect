@@ -48,6 +48,9 @@ public class JavaLambdas {
         System.out.println("5th way - лямбда - выражение");
         friends.forEach(System.out::println);
         
+        System.out.println("5th way - лямбда - выражение");
+        friends.stream().forEach(System.out::println);
+        
         /*List<String> vitamins = new ArrayList<>();
         vitamins.add("A");
         System.out.println(vitamins);
