@@ -16,11 +16,9 @@ import java.util.function.Consumer;
 public class JavaLambdas {
 
     /**
+     * 
      * @param args the command line arguments
      */
-
-    
-    
     
     public static void main(String[] args) {
         final List<String> friends = Arrays.asList("Brian", "Nate", "Neal", 
@@ -62,6 +60,7 @@ public class JavaLambdas {
         vitamins.add(1,"D");
         System.out.println(vitamins);
                 */
+        
         }
     
 }
