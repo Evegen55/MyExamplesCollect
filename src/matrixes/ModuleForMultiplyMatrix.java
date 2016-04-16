@@ -29,10 +29,11 @@ public class ModuleForMultiplyMatrix extends CheckMatrix {
         double countF = 0;
         double countS = 0;
         if(
-        getArrayCountColumn(FirstArr) == getArrayCountRow(SecondArr) &&
-        checkArray(FirstArr) &&
-        checkArray(SecondArr)
-        ){
+            getArrayCountColumn(FirstArr) == getArrayCountRow(SecondArr) &&
+            checkArray(FirstArr) &&
+            checkArray(SecondArr)
+        )
+        {
             for (int k=0; k<getArrayCountRow(FirstArr);k++) {
                 for (int n=0; n<getArrayCountColumn(FirstArr);n++) {
                     for (int r=0; r<getArrayCountColumn(FirstArr);r++) {
@@ -40,14 +41,14 @@ public class ModuleForMultiplyMatrix extends CheckMatrix {
                             countF = FirstArr[k][r]*SecondArr[r][n];
                             countS += countF;
                             break;
-                            }
-                            MultArr[k][n] = countS;
-                            }
-                            countS = 0;
-                            }
-                            }
-                            }
-                            return MultArr;
-                            }
+                        }
+                        MultArr[k][n] = countS;
+                    }
+                    countS = 0;
+                }
+            }
+        }
+        return MultArr;
+    }
 
 }
