@@ -43,10 +43,10 @@ public class MySQL4 {
         //Ога) организуем пул физических соединений - средствами драйвера от Мелкомягких
         SQLServerConnectionPoolDataSource sds = new SQLServerConnectionPoolDataSource();
         
-        sds.setServerName("127.0.0.1");
+        sds.setServerName("");
         sds.setInstanceName("SQLEXPRESS");
         sds.setPortNumber(1433);
-        sds.setDatabaseName("paymentsDB_v_1_1");
+        sds.setDatabaseName("paymentsDB_v_1_3_SQLExpress");
         sds.setUser("sa");
         sds.setPassword("qwerty");
         sds.setIntegratedSecurity(false);
