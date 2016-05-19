@@ -16,10 +16,7 @@
  */
 package binary_search;
 
-import org.junit.After;
-import org.junit.AfterClass;
 import org.junit.Before;
-import org.junit.BeforeClass;
 import org.junit.Test;
 import static org.junit.Assert.*;
 
@@ -29,38 +26,28 @@ import static org.junit.Assert.*;
  */
 public class BinarySearchByMeTest {
     
+    BinarySearchByMe bs;
+    long f;
+    
     public BinarySearchByMeTest() {
-    }
-    
-    @BeforeClass
-    public static void setUpClass() {
-    }
-    
-    @AfterClass
-    public static void tearDownClass() {
     }
     
     @Before
     public void setUp() {
+        long[] a = {9, 18, 27, 36, 45, 54, 63, 72, 81, 90, 99, 108, 117, 126, 135, 144};
+        f = 27;
+        bs = new BinarySearchByMe(a);
     }
     
-    @After
-    public void tearDown() {
-    }
-
     /**
      * Test of find method, of class BinarySearchByMe.
      */
     @Test
     public void testFind() {
-        System.out.println("find");
-        long searchKey = 0L;
-        BinarySearchByMe instance = null;
-        int expResult = 0;
-        int result = instance.find(searchKey);
+        int expResult = bs.find(f);
+        int result = 2;
+        System.out.println("Find at position " + expResult);
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
     
 }

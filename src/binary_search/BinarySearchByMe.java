@@ -49,12 +49,4 @@ public class BinarySearchByMe {
             }                      
         }  // end else divide range
     }  // end recFind()
-    
-    /*
-    public static void main(String[] args){
-    long[] a = {9, 18, 27, 36, 45, 54, 63, 72, 81, 90, 99, 108, 117, 126, 135, 144};
-    long f = 27;
-    BinarySearchByMe bs = new BinarySearchByMe(a);
-    System.out.println("Find at position " + bs.find(f));
-    }*/
 }
