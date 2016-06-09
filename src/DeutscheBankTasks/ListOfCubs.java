@@ -14,7 +14,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package other_examples;
+package DeutscheBankTasks;
 
 /**
  *
@@ -31,7 +31,7 @@ public class ListOfCubs {
             
             int cubs = (int) (Math.pow(b, 3) + Math.pow(c, 3)+ Math.pow(d, 3));
             if (i == cubs) {
-                System.out.println(i);
+                System.out.println(i + "\t" + "b");
             }
         }
     }
